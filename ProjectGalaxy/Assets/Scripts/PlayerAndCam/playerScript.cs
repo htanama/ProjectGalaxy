@@ -7,7 +7,7 @@ public class playerScript : MonoBehaviour //IHealth
     [Header("=== PLAYER COMPONENTS ===")]
     [SerializeField] Renderer playerModel;
     [SerializeField] CharacterController playerController;
-    
+
     //Use when shooting is implemented
     [SerializeField] LayerMask ignoreMask;
     int jumpCount;
@@ -17,14 +17,14 @@ public class playerScript : MonoBehaviour //IHealth
     //[SerializeField] private float playerCurrentHealth;
 
     [Header("=== MOVEMENT ===")]
-    [SerializeField][Range(1,  10)] int speed;
-    [SerializeField][Range(2,   5)] int sprintMod;
-    [SerializeField][Range(1,   5)] int jumpMax;
-    [SerializeField][Range(5,  30)] int jumpSpeed;
+    [SerializeField][Range(1, 10)] int speed;
+    [SerializeField][Range(2, 5)] int sprintMod;
+    [SerializeField][Range(1, 5)] int jumpMax;
+    [SerializeField][Range(5, 30)] int jumpSpeed;
     [SerializeField][Range(10, 60)] int gravity;
 
     // Flags //
-    
+
     //bool isShooting;
     bool isSprinting;
     //bool isPlayingStep;
@@ -40,7 +40,7 @@ public class playerScript : MonoBehaviour //IHealth
 
     // Getters and Setters //
 
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,7 +70,7 @@ public class playerScript : MonoBehaviour //IHealth
             // falling/ledge
             horizontalVelocity = Vector3.zero;
         }
-        
+
         // tie movement to camera 
         moveDirection = (transform.right * Input.GetAxis("Horizontal")) +
                         (transform.forward * Input.GetAxis("Vertical"));// normalized to handle diagonal movement
@@ -116,4 +116,6 @@ public class playerScript : MonoBehaviour //IHealth
 
 
     }
+
+
 }
