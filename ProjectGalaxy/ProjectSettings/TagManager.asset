@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Environment
   - UI
+  - Health Pickup
+  - Weapon Pickup
+  - Pickup
   layers:
   - Default
   - TransparentFX
