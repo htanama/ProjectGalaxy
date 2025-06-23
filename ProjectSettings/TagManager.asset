@@ -3,18 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UI
+  - GameManager
+  - CarryingSlot
+  - CinemachineTarget
+  - Particle
+  - Boss
+  - PlayerSpawnArea
+  - MainMenu
+  - Enemy
+  - BossBar
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player Bullet
+  - Enemy Bullet
+  - Level/Scene
   - 
   - 
   - 
@@ -40,4 +50,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2734702301
     locked: 0
